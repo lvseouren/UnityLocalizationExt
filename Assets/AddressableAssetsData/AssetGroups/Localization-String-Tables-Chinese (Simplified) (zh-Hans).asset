@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Chinese (Simplified) (zh-Hans)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Chinese (Simplified) (zh-Hans)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 334800b4d4a7b854a805816431c53252
+  m_SerializeEntries:
+  - m_GUID: 0d3c365e7aa4ffe4f89de627fb59c15d
+    m_Address: LoginStringCollection_zh-Hans
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: a8c07601d61209045ad13604adc310f0
+    m_Address: ShopStringCollection_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: baf51f33959618c4b9cc9b46614ce935
+    m_Address: Package_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: 5820df3d5a651b84e8d27034455d861d
+    m_Address: Test_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: 921a1ae02db360c42aacaea71f86e12e
+    m_Address: Prefabs_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: e24d8a2f79b883f4c99fd8d2220748af
+    m_Address: Resources_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  - m_GUID: 0a552786f61e6354a88cce99ea81be2a
+    m_Address: Plugins_zh-Hans
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 4458aa3ac32aa5242953a571a22ee554, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7d8da12977c3f0f4d8ad4516d39df604, type: 2}
+    - {fileID: 11400000, guid: cbe5ac0aa3d74894f89fafbd8f546fa8, type: 2}

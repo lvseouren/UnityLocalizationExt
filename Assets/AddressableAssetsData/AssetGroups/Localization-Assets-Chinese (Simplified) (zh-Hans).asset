@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Chinese (Simplified) (zh-Hans)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Chinese (Simplified) (zh-Hans)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c9909530389b33e4b82324e74bb5c246
+  m_SerializeEntries:
+  - m_GUID: ebadefca6c7bb9e428d1f84a6f42303d
+    m_Address: login_icon_cb
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  - m_GUID: 9a69e319947675b4bacd4ba7da9b90c6
+    m_Address: ZhSampleBtn
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  - m_GUID: 5d6a264375aeae747a91124998bf898a
+    m_Address: login_xf_hb
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  - m_GUID: f04308a0158a38d4f9084288394522fc
+    m_Address: login_qyzt_bg
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 4458aa3ac32aa5242953a571a22ee554, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 827ff0353e8cbd04eba0ed1f2f479366, type: 2}
+    - {fileID: 11400000, guid: 58fa1ab9f035ebb4ea47f4bfe58dc745, type: 2}

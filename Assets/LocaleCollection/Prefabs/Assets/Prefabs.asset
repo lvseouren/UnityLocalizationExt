@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: cca29cd127743d54d9731b35e28cdec0, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 38e02a6874b05a04e89de2649e90faab, type: 2}
+  - {fileID: 11400000, guid: 130003311f9a13d46aca51818cf63eef, type: 2}
+  - {fileID: 11400000, guid: dabb58b6752978c45bb527d139155728, type: 2}
+  m_Extensions: []
+  m_Group: Asset Table
+  references:
+    version: 1
