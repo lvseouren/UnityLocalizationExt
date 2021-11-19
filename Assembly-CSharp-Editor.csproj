@@ -53,9 +53,7 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\Locale\MyCSVExtension.cs" />
-    <Compile Include="Assets\Editor\Locale\CreateLocalizationTables.cs" />
-    <Compile Include="Assets\Editor\BuildEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\PgLocalizeComponent_UGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

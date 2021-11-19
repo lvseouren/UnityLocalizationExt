@@ -25,9 +25,10 @@ MonoBehaviour:
       m_Items:
       - id: 0
   - m_Id: 1065528713216
-    m_Localized: d1
+    m_Localized: "\u73A9\u5BB6: {0} "
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 0
   - m_Id: 430238390935552
     m_Localized: battle_value1_zh
     m_Metadata:
@@ -41,4 +42,4 @@ MonoBehaviour:
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e0b54eeb000000
+        m_Entries: 00e0b54eeb00000000e07516f8000000
