@@ -17,7 +17,7 @@ public static class LocalizationExtension
             var txt = target.gameObject.GetComponent<Text>();
             if(txt)
             {
-                txt.text = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Common", key, args).Result;
+                txt.text = LocalizationSettings.StringDatabase.GetLocalizedStringAsync(key, args).Result;
             }
         }
         else

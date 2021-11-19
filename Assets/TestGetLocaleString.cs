@@ -10,6 +10,7 @@ public class TestGetLocaleString : MonoBehaviour
     public Text text;
     bool flag = false;
     public LocalizeStringEvent localizeStringEvent;
+    public PgLocalizeStringEvent pgLocalizeStringEvent;
     public void OnClick()
     {
         if (flag)
@@ -25,6 +26,15 @@ public class TestGetLocaleString : MonoBehaviour
             localizeStringEvent.SetString("testCommon", "zhaomu");
         else
             localizeStringEvent.SetString("test_format", "linge");
+        flag = !flag;
+    }
+
+    public void TestPgStringExtMethod()
+    {
+        if (flag)
+            pgLocalizeStringEvent.SetString("testCommon", "zhaomu");
+        else
+            pgLocalizeStringEvent.SetString("test_format", "linge");
         flag = !flag;
     }
 }
