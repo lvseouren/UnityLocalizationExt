@@ -22,9 +22,9 @@ public class TestGetLocaleString : MonoBehaviour
     public void TestStringExtMethod()
     {
         if (flag)
-            localizeStringEvent.SetString("battle_key_1");
+            localizeStringEvent.SetString("testCommon", "zhaomu");
         else
-            localizeStringEvent.SetString("battle_key_2");
+            localizeStringEvent.SetString("test_format", "linge");
         flag = !flag;
     }
 }
