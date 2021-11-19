@@ -25,25 +25,40 @@ public static class MyCSVExtension
         {
             using (var csvWriter = new CsvWriter(stream, CultureInfo.InvariantCulture))
             {
+                //write header
+                //key&id
+                csvWriter.WriteField("Key");
+                csvWriter.WriteField("Id");
+
+                var locales = LocalizationEditorSettings.GetLocales();
+                foreach(var locale in locales)
+                {
+                    csvWriter.WriteField(locale.name);
+                }
+                csvWriter.NextRecord();
                 foreach (var collection in stringTableCollections)
                 {
-                    //写入collection 名称，写入分割content
+                    //写入collection 名称，写入分割content--不需要
                     //写入collection内容
-                    csvWriter.WriteField(collection.name);
-                    csvWriter.NextRecord();
+                    //csvWriter.WriteField(collection.name);
+                    //csvWriter.NextRecord();
                     foreach (var row in collection.GetRowEnumerator())
                     {
                         if (row.TableEntries[0] != null && row.TableEntries[0].SharedEntry.Metadata.HasMetadata<ExcludeEntryFromExport>())
                             continue;
 
+                        csvWriter.WriteField(row.KeyEntry.Key);
+                        csvWriter.WriteField(row.KeyEntry.Id);
                         int i = 0;
                         foreach(var table in collection.StringTables)
                         {
                             var entry = row.TableEntries[i++];
                             csvWriter.WriteField(entry.LocalizedValue, true);
                         }
+                        csvWriter.NextRecord();
                     }
-                    csvWriter.NextRecord();
+                    //csvWriter.NextRecord();
+                    //csvWriter.NextRecord();
                     //foreach (var cell in columnMappings)
                     //{
                     //    cell.WriteEnd(collection);
