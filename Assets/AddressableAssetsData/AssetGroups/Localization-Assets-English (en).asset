@@ -37,6 +37,21 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+  - m_GUID: ba7cc7d30a36d8e4489e2700d504925b
+    m_Address: login_icon_tz
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 7212366fef3e8cd4f808c40203b42af6
+    m_Address: login_icon_cjjs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: c7c1bfa0bfabc314e9bb06b46f97fe1d
+    m_Address: audio_onclick
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 4458aa3ac32aa5242953a571a22ee554, type: 2}
   m_SchemaSet:

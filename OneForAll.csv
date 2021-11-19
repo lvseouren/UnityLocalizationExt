@@ -1,0 +1,4 @@
+﻿Battle
+"{global.player-name} 有 {apple-component.appleCount}个苹果","{global.player-name} has {apple-component.appleCount:plural:an apple|{} apples}","d1","d2"
+Home
+"家","Home","home"

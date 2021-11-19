@@ -17,55 +17,20 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 93beed8adc28aa9459e60055cd65cb7a
   m_SerializeEntries:
-  - m_GUID: 5b34e4c988ebf1a40bc105b10544009b
-    m_Address: Assets/Locale/String Collections/Login/LoginStringCollection Shared
-      Data.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b23829866ce86aa4aae6a19f8cb42425
-    m_Address: Assets/Locale/String Collections/Shop/ShopStringCollection Shared
-      Data.asset
+  - m_GUID: 71f2f862f90b135438983145660926ce
+    m_Address: Assets/LocaleCollection/TestAssetTable Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: e2171af17344bb34f8391cc0b47fe3a1
-    m_Address: Assets/Locale/Asset Collections/Login/LoginAssetCollection Shared
-      Data.asset
+  - m_GUID: 8608d84d154ae8b47a92772859b3d16a
+    m_Address: Assets/LocaleCollection/Battle Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: 9421cf0b29b081d4f95458908b85732b
-    m_Address: Assets/Locale/String Collections/Package/Package Shared Data.asset
+  - m_GUID: d27f2a3e5845ed54b9e77629c6a4f3b0
+    m_Address: Assets/LocaleCollection/Home Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: 12c6052a5932beb4c9627407d2b39ff9
-    m_Address: Assets/Locale/Asset Collections/Package/Package Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 69e6f5b9ff1e5f84d9b8ea4673ca8abc
-    m_Address: Assets/Locale/String Collections/Test/Test Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 58860e606916d5f449589e8551bdac21
-    m_Address: Assets/LocaleCollection/Prefabs/String/Prefabs Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: cca29cd127743d54d9731b35e28cdec0
-    m_Address: Assets/LocaleCollection/Prefabs/Assets/Prefabs Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 0c5e0bcafe7b9aa43af1b7da7c336181
-    m_Address: Assets/LocaleCollection/Resources/String/Resources Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 3d8f5d9003f48d0458cdc4cdec880853
-    m_Address: Assets/LocaleCollection/Resources/Assets/Resources Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: 14cf42319c7018a43b27f20c498ac9c1
-    m_Address: Assets/LocaleCollection/Plugins/String/Plugins Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-  - m_GUID: a1757ce27367472449c5e38da5d84eee
-    m_Address: Assets/LocaleCollection/Plugins/Assets/Plugins Shared Data.asset
+  - m_GUID: 9755fcff1bee3b845a28b84168021437
+    m_Address: Assets/LocaleCollection/Login Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
   m_ReadOnly: 1

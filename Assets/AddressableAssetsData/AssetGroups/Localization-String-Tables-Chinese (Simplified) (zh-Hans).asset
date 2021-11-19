@@ -17,44 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 334800b4d4a7b854a805816431c53252
   m_SerializeEntries:
-  - m_GUID: 0d3c365e7aa4ffe4f89de627fb59c15d
-    m_Address: LoginStringCollection_zh-Hans
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: a8c07601d61209045ad13604adc310f0
-    m_Address: ShopStringCollection_zh-Hans
+  - m_GUID: 036dc652b3c1af14992ac3bbbb26ad45
+    m_Address: Battle_zh-Hans
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans
     - Preload
-  - m_GUID: baf51f33959618c4b9cc9b46614ce935
-    m_Address: Package_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: 5820df3d5a651b84e8d27034455d861d
-    m_Address: Test_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: 921a1ae02db360c42aacaea71f86e12e
-    m_Address: Prefabs_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: e24d8a2f79b883f4c99fd8d2220748af
-    m_Address: Resources_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: 0a552786f61e6354a88cce99ea81be2a
-    m_Address: Plugins_zh-Hans
+  - m_GUID: f9fafb6e632afb54ca6e24f3000ee607
+    m_Address: Home_zh-Hans
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans

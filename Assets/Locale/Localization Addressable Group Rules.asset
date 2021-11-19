@@ -26,9 +26,12 @@ MonoBehaviour:
       type: {class: GroupResolver, ns: UnityEditor.Localization.Addressables, asm: Unity.Localization.Editor}
       data:
         m_SharedGroupName: Localization-Locales
-        m_SharedGroup: {fileID: 0}
+        m_SharedGroup: {fileID: 11400000, guid: a26927d9d6dfbe14c8bc374133ff714e, type: 2}
         m_LocaleGroupNamePattern: Localization-Locales
-        m_LocaleGroups: []
+        m_LocaleGroups:
+        - localeIdentifier:
+            m_Code: en
+          group: {fileID: 11400000, guid: 306e2ebbf1f0fb544bd705cfca687376, type: 2}
         m_MarkEntriesReadOnly: 1
     00000001:
       type: {class: GroupResolver, ns: UnityEditor.Localization.Addressables, asm: Unity.Localization.Editor}

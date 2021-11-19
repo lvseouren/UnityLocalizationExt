@@ -22,6 +22,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt
+    - Locale-zh-Hans
   - m_GUID: 27463e1e678051546b5ec169ed229d39
     m_Address: PtSampleBtn
     m_ReadOnly: 1
@@ -29,6 +30,11 @@ MonoBehaviour:
     - Locale-pt
   - m_GUID: 69bc38b2b92a3124495a3af9288e01ca
     m_Address: login_xf_wh
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt
+  - m_GUID: cdc9ce69895f8c54d988469a179d8026
+    m_Address: audio_title
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt

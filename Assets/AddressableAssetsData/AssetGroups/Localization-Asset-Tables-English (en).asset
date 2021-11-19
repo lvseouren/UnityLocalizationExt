@@ -17,32 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 03897d8e69f92a442a45dca766c4a5f2
   m_SerializeEntries:
-  - m_GUID: 826ed9f6b8b18d64ebaaf6aa65c8b5e8
-    m_Address: LoginAssetCollection_en
+  - m_GUID: 1dd1a77762360c64d8b4271ae9025bb2
+    m_Address: TestAssetTable_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
-  - m_GUID: 6589b6b844111424cb05fcc9b3fc98ef
-    m_Address: Package_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 130003311f9a13d46aca51818cf63eef
-    m_Address: Prefabs_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: ab7ebfc9fb682914fb4e6e1047b4a320
-    m_Address: Resources_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 340e0dd6562d2d94cad2cdc351e192ae
-    m_Address: Plugins_en
+  - m_GUID: 8e9932dd2644d614e885c6d23f37d818
+    m_Address: Login_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

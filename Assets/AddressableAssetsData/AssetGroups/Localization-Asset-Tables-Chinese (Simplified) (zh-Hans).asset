@@ -17,32 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4953aaf08c85e6f438ec7850f43d0d86
   m_SerializeEntries:
-  - m_GUID: e5aa3fd30456ef946a4c479d0fe96160
-    m_Address: LoginAssetCollection_zh-Hans
+  - m_GUID: 0310968bc4e29b84d8bb27d8a3fc8216
+    m_Address: TestAssetTable_zh-Hans
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans
     - Preload
-  - m_GUID: 9b347c9d1b4aa574b9f2e9ece1880cf4
-    m_Address: Package_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: 38e02a6874b05a04e89de2649e90faab
-    m_Address: Prefabs_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: ecf685f84ee2ab84f8f139a8afc195df
-    m_Address: Resources_zh-Hans
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh-Hans
-    - Preload
-  - m_GUID: a4adc901ebe3ccf4faa89e2c49292f0a
-    m_Address: Plugins_zh-Hans
+  - m_GUID: 77075fec72647c04989c847c238b9266
+    m_Address: Login_zh-Hans
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans

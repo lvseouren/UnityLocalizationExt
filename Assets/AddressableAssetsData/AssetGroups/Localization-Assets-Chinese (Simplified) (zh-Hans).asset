@@ -37,6 +37,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-Hans
+  - m_GUID: 86a5f0315b62c0342b64e6ceb0f08e4a
+    m_Address: login_new_bg
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+  - m_GUID: 40dc346fb1dada047a44a27f338bbc60
+    m_Address: audio_close
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 4458aa3ac32aa5242953a571a22ee554, type: 2}
   m_SchemaSet:

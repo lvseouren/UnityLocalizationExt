@@ -17,44 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 0f50fb19bb1662841a4d824051a4f95c
   m_SerializeEntries:
-  - m_GUID: e34ea68a3e6009849a0c8aed98283ae4
-    m_Address: LoginStringCollection_en
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: acabc9f47a5f6204e94373c2f05f9a33
-    m_Address: ShopStringCollection_en
+  - m_GUID: 8b08d915f0e1a5e4981d473c7b76e5b3
+    m_Address: Battle_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
-  - m_GUID: 4ff612baf90ae1c4b84804b7ae57eb4d
-    m_Address: Package_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 9db6414dcb6714c4ba164c7e09ef08b5
-    m_Address: Test_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 193f3197692f9ef40b0c7928f2d14e4d
-    m_Address: Prefabs_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 8ab394a0f939d8a47b6627994ed33ce4
-    m_Address: Resources_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-  - m_GUID: 472c55bfa47ea7142b6dac869a89a4a6
-    m_Address: Plugins_en
+  - m_GUID: c7a4dfb3e17e3fb4a9313a1732507b59
+    m_Address: Home_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

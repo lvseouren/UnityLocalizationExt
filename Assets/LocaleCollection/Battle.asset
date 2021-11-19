@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Battle
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 8608d84d154ae8b47a92772859b3d16a, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 036dc652b3c1af14992ac3bbbb26ad45, type: 2}
+  - {fileID: 11400000, guid: 8b08d915f0e1a5e4981d473c7b76e5b3, type: 2}
+  m_Extensions:
+  - id: 0
+  m_Group: String Table
+  references:
+    version: 1
+    00000000:
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - id: 1
+        - id: 2
+        - id: 3
+        - id: 4
+        m_ConnectedFile: G:/GitRoot/Localization/Assets/Battle2.csv
+    00000001:
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    00000002:
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: zh-Hans
+        m_FieldName: Chinese (Simplified)(zh-Hans)
+        m_CommentFieldName: Chinese (Simplified)(zh-Hans) Comments
+        m_IncludeComments: 1
+    00000003:
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: English(en)
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 1
+    00000004:
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: pt
+        m_FieldName: Portuguese(pt)
+        m_CommentFieldName: Portuguese(pt) Comments
+        m_IncludeComments: 1
