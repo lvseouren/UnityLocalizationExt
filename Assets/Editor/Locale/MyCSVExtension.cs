@@ -10,18 +10,20 @@ using UnityEditor.Localization.Plugins.CSV;
 using CsvHelper;
 using UnityEditor;
 using UnityEngine.Localization.Metadata;
+using System.Dynamic;
+using UnityEngine.Localization.Tables;
 
 public static class MyCSVExtension
 {
+    const string csvFileName = "OneForAll.csv";
     //将所有Module Collection(string类型)的数据导出到一个csv文件中
     [MenuItem("Localization/CSV2/Emport All Collections In One CSV")]
     public static void ExportAllCollection()
     {
         // Get every String Table Collection
         var stringTableCollections = LocalizationEditorSettings.GetStringTableCollections();
-        string fileName = "OneForAll.csv";
         int index = 0;
-        using (var stream = new StreamWriter(fileName, false, Encoding.UTF8))
+        using (var stream = new StreamWriter(csvFileName, false, Encoding.UTF8))
         {
             using (var csvWriter = new CsvWriter(stream, CultureInfo.InvariantCulture))
             {
@@ -68,12 +70,50 @@ public static class MyCSVExtension
         }
     }
 
+    [MenuItem("Localization/CSV2/Import The OneForAll CSV")]
     //读取总表，并刷新对应Collection中的数据
     public static void ImportAll()
     {
+        using (var stream = new StreamReader(csvFileName))
+        {
+            using (var csv = new CsvReader(stream, CultureInfo.InvariantCulture))
+            {
+                Dictionary<string, string> properties = new Dictionary<string, string>();
+                properties.Add("Key", string.Empty);
+                properties.Add("Id", string.Empty);
+                properties.Add("Chinese (Simplified) (zh-Hans)", string.Empty);
+                properties.Add("English (en)", string.Empty);
+                properties.Add("Portuguese (pt)", string.Empty);
+                var dynamicObject = new ExpandoObject() as IDictionary<string, Object>;
+                foreach (var property in properties)
+                {
+                    dynamicObject.Add(property.Key, property.Value);
+                }
 
+                var type = dynamicObject.GetType();
+                var records = csv.GetRecords<dynamic>();
+                foreach(ExpandoObject record in records)
+                {
+                    IDictionary<string, object> dict = record;
+                    var key = dict["Key"] as string;
+                    var collectionName = GetCollectionNameByKey(key);
+                    var id = dict["Id"] as string;
+                    var locales = LocalizationEditorSettings.GetLocales();
+                    foreach(var locale in locales)
+                    {
+                        LocalizationTableCollection collection = LocalizationEditorSettings.GetStringTableCollection(collectionName);
+                        StringTable localTable = collection.GetTable(locale.name) as StringTable;
+                        StringTableEntry entry = localTable.GetEntry(id);
+                    }
+
+                }
+            }
+        }
     }
 
-
+    static string GetCollectionNameByKey(string key)
+    {
+        return key;
+    }
 }
 
