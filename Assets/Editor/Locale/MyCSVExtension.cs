@@ -116,9 +116,7 @@ public static class MyCSVExtension
                         }
                         StringTableEntry entry = localTable.GetEntry(key);
                         if (entry == null)
-                        {
-                            entry = localTable.AddEntry(key, value);
-                        }
+                            localTable.AddEntry(key, value);
                         else
                             entry.Data.Localized = value;
                     }
