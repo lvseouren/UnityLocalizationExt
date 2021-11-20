@@ -22,19 +22,19 @@ public class TestGetLocaleString : MonoBehaviour
 
     public void TestStringExtMethod()
     {
-        if (flag)
-            localizeStringEvent.SetString("testCommon", "zhaomu");
-        else
-            localizeStringEvent.SetString("test_format", "linge");
-        flag = !flag;
+        //if (flag)
+        //    localizeStringEvent.SetString("testCommon", "zhaomu");
+        //else
+        //    localizeStringEvent.SetString("test_format", "linge");
+        //flag = !flag;
     }
 
     public void TestPgStringExtMethod()
     {
         if (flag)
-            pgLocalizeStringEvent.SetString("testCommon", "zhaomu");
+            pgLocalizeStringEvent.SetString("Common_key1", "zhaomu", ":heihei");
         else
-            pgLocalizeStringEvent.SetString("test_format", "linge");
+            pgLocalizeStringEvent.SetString("Battle_key4", "linge", ":Haha");
         flag = !flag;
     }
 }

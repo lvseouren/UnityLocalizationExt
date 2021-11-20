@@ -3,17 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
+using UnityEngine.Localization.Settings;
 
 public class PgLocalizeStringEvent : LocalizeStringEvent
 {
-    LocalizedString originStringRef;
+    string originCollection;
     private void Awake()
     {
-        originStringRef = StringReference;
+        originCollection = StringReference.TableReference;
     }
-    protected virtual void UpdateString(string value)
+
+    public void SetString(string key, params object[] args)
     {
-        base.UpdateString(value);
-        StringReference = originStringRef;
+        bool isKeyExist = CheckCollectionHasKey(key);
+        StringReference.Arguments = args;
+        if (isKeyExist)
+        {
+            StringReference.SetReference(originCollection, key);
+        }
+        else
+        {
+            StringReference.SetReference(LocalizationSettings.StringDatabase.DefaultTable, key);
+        }
+    }
+
+    public bool CheckCollectionHasKey(string key)
+    {
+        var table = LocalizationSettings.StringDatabase.GetTable(originCollection);
+        return table.GetEntry(key) != null;
     }
 }

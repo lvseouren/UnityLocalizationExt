@@ -7,25 +7,20 @@ using UnityEngine.UI;
 
 public static class LocalizationExtension
 {
-    public static void SetString(this LocalizeStringEvent target, string key, params object[] args)
+    public static void _SetString(this PgLocalizeStringEvent target, string key, params object[] args)
     {
         string collectionNameCache = target.StringReference.TableReference.TableCollectionName;
         bool isKeyExist = CheckCollectionHasKey(collectionNameCache, key);
         if (!isKeyExist)
         {
-            //target.StringReference.TableReference = "Common";
-            var txt = target.gameObject.GetComponent<Text>();
-            if(txt)
-            {
-                txt.text = LocalizationSettings.StringDatabase.GetLocalizedStringAsync(key, args).Result;
-            }
+            target.StringReference.TableReference = LocalizationSettings.StringDatabase.DefaultTable;
         }
         else
         {
             target.StringReference.Arguments = args;
-            target.StringReference.TableEntryReference = key;
-            target.RefreshString();
         }
+        target.StringReference.TableEntryReference = key;
+        target.RefreshString();
     }
 
     public static bool CheckCollectionHasKey(string collectionName, string key)
