@@ -1,4 +1,8 @@
-﻿Battle
-"{global.player-name} 有 {apple-component.appleCount}个苹果","{global.player-name} has {apple-component.appleCount:plural:an apple|{} apples}","d1","d2"
-Home
-"家","Home","home"
+﻿Key,Id,Chinese (Simplified) (zh-Hans),English (en),Portuguese (pt)
+Battle_key3,1010637856768,"{global.player-name} 有 {apple-component.appleCount}个苹果","{global.player-name} has {apple-component.appleCount:plural:an apple|{} apples}"
+Battle_key4,1065528713216,"玩家: {0} ","player: {0} "
+Battle_key1,430238390935552,"battle_value1_zh","battle_value1_en"
+Battle_key2,430256778764288,"battle_value2_zh","battle_value2_en","测试添加locale"
+Common_key1,6227877888,"公共-测试修改","","Common"
+Home_key1,6102048768,"家","Home","home"
+Home_key2,315928159313920,"test","","test2"
