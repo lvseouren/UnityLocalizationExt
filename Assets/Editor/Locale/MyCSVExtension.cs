@@ -12,6 +12,7 @@ using UnityEditor;
 using UnityEngine.Localization.Metadata;
 using System.Dynamic;
 using UnityEngine.Localization.Tables;
+using UnityEngine.Localization;
 
 public static class MyCSVExtension
 {
@@ -84,13 +85,12 @@ public static class MyCSVExtension
                 properties.Add("Chinese (Simplified) (zh-Hans)", string.Empty);
                 properties.Add("English (en)", string.Empty);
                 properties.Add("Portuguese (pt)", string.Empty);
-                var dynamicObject = new ExpandoObject() as IDictionary<string, Object>;
-                foreach (var property in properties)
-                {
-                    dynamicObject.Add(property.Key, property.Value);
-                }
+                //var dynamicObject = new ExpandoObject() as IDictionary<string, Object>;
+                //foreach (var property in properties)
+                //{
+                //    dynamicObject.Add(property.Key, property.Value);
+                //}
 
-                var type = dynamicObject.GetType();
                 var records = csv.GetRecords<dynamic>();
                 foreach(ExpandoObject record in records)
                 {
@@ -99,13 +99,29 @@ public static class MyCSVExtension
                     var collectionName = GetCollectionNameByKey(key);
                     var id = dict["Id"] as string;
                     var locales = LocalizationEditorSettings.GetLocales();
-                    foreach(var locale in locales)
+                    foreach(Locale locale in locales)
                     {
                         LocalizationTableCollection collection = LocalizationEditorSettings.GetStringTableCollection(collectionName);
-                        StringTable localTable = collection.GetTable(locale.name) as StringTable;
-                        StringTableEntry entry = localTable.GetEntry(id);
+                        if (collection == null)
+                            continue;
+                        StringTable localTable = collection.GetTable(locale.Identifier) as StringTable;
+                        var value = dict[locale.name] as string;
+                        if (localTable == null)
+                        {
+                            if(!string.IsNullOrEmpty(value))
+                            { 
+                                localTable = collection.AddNewTable(locale.Identifier) as StringTable;
+                            }else
+                                continue;
+                        }
+                        StringTableEntry entry = localTable.GetEntry(key);
+                        if (entry == null)
+                        {
+                            entry = localTable.AddEntry(key, value);
+                        }
+                        else
+                            entry.Data.Localized = value;
                     }
-
                 }
             }
         }
@@ -113,7 +129,8 @@ public static class MyCSVExtension
 
     static string GetCollectionNameByKey(string key)
     {
-        return key;
+        var data = key.Split('_');
+        return data[0];
     }
 }
 
