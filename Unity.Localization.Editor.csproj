@@ -215,6 +215,7 @@
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\UI\PackageLanguageMenu.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Addressables\GroupResolver.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\UI\CharacterSet\CharacterSetMenuItems.cs" />
+    <Compile Include="Assets\Editor\Locale\PgLocalizeComponent_UGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.localization@1.0.5\Editor\UI\Templates\LocalizationStyles.uss" />
