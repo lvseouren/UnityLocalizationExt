@@ -135,6 +135,7 @@
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Plugins\CSV\Columns\ColumnMapping.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Asset Pipeline\LocalizationAssetPostProcessor.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Plugins\Xliff\XliffDocument.cs" />
+    <Compile Include="Assets\Editor\Locale\MyCSVExtension.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\UI\Tables\SharedTableDataEditor.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Settings\CollectionExtension.cs" />
     <Compile Include="Packages\com.unity.localization@1.0.5\Editor\Property Variants\ScenePropertyTracker.cs" />
@@ -236,6 +237,7 @@
     <None Include="Packages\com.unity.localization@1.0.5\Editor\Unity.Localization.Editor.asmdef" />
     <None Include="Packages\com.unity.localization@1.0.5\Editor\UI\Templates\CustomLocaleUIWindow.uxml" />
     <None Include="Packages\com.unity.localization@1.0.5\Editor\UI\Templates\ProjectCollectionsTableSelector.uxml" />
+    <None Include="Assets\Editor\NewAssemblyReference.asmref" />
     <None Include="Packages\com.unity.localization@1.0.5\Editor\UI\Templates\LocalizationTablesWindow.uxml" />
   </ItemGroup>
   <ItemGroup>

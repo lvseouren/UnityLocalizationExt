@@ -16,19 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 8608d84d154ae8b47a92772859b3d16a
   m_Entries:
   - m_Id: 1010637856768
-    m_Key: test2
+    m_Key: Battle_key3
     m_Metadata:
       m_Items: []
   - m_Id: 1065528713216
-    m_Key: test_format
+    m_Key: Battle_key4
     m_Metadata:
       m_Items: []
   - m_Id: 430238390935552
-    m_Key: battle_key_1
+    m_Key: Battle_key1
     m_Metadata:
       m_Items: []
   - m_Id: 430256778764288
-    m_Key: battle_key_2
+    m_Key: Battle_key2
     m_Metadata:
       m_Items: []
   m_Metadata:
